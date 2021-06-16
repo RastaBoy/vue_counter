@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vue Counter</title>
+    <link rel="stylesheet" href="css/vladilen_theme.css">
 </head>
 <body>
     
+    <div class="container pt-5" id="app">
+        <div class="card center">
+            <h1> {{ title }}: {{ counter }}</h1>
+            <div>
+                <button class="btn primary" v-on:click="counter++">Увеличить</button>
+                <button class="btn danger" v-on:click="counter--">Уменьшить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="components/app.js"></script>
 </body>
 </html>
